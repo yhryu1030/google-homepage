@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<style>
+    body {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+    }
+    header {
+        display: block;
+    }
+    footer {
+        background-color: #f2f2f2;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        margin: 20px 20px 0px 5px;
+        padding-left: 0px;
+    }
+    .botbar{
+        display: flex;
+        padding: 0px;
+        font-size: 14px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .search-bar {
+        display: flex;
+        margin: 30px auto;
+        max-width: 500px;
+        height: 44px;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+    }
+    .search-bar:hover {
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+    ul {
+        list-style-type: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    li {
+        padding-left: 15px;
+    }
+    header a {
+        text-decoration: none;
+        color: rgba(0,0,0,0.87);
+    }
+    footer a {
+        text-decoration: none;
+        color: #5f6368;
+    }
+    form {
+        display: block;
+    }
+    .push {
+        display: flex;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .sign-in {
+        background-color: blue;
+        color: white;
+        padding: 7px 12px 7px 12px;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+    .space {
+        height: 130px;
+    }
+    #search-icon {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        padding: 0 15px;
+        margin: auto 0;
+    }
+    #search-input {
+        border: none;
+        margin: auto 0;
+        outline: none;
+        font-size: 16px;
+        flex: 100%;
+    }
+    #mic-icon {
+        height: 25px;
+        width: 25px;
+        padding: 0 15px;
+        margin: auto 0;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        position: relative;
+    }
+    .btn {
+        background-color: #f2f2f2;
+        height: 36px;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        padding: 0 16px;
+        font-size: 16px;
+        margin-left: 7px;
+        margin-right: 7px;
+        cursor: pointer;
+        color: rgba(0,0,0,0.5);
+    }
+    .btn:hover {
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+</style>
+<head>
+    <title>Google Home Page</title>
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+            <li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+            <div class="push">
+                <li><a href="https://www.google.com/gmail/about/#">Gmail</a></li>
+                <li><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                <li><a href="https://about.google/intl/en/products/?tab=wh&tip=hands-free">
+                    <img src="/home/yhryu1030/Pictures/apps.png" alt="Google Apps">
+                    </a>
+                </li>
+                <li><a class="sign-in" href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" role="button">Sign In</a></li>
+            </div>
+        </ul>
+    </header>
+    <div class="space">
+    </div>
+    <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <form>
+        <div class="search-bar">
+            <img id="search-icon" src="/home/yhryu1030/Pictures/search.png" alt="Search Icon">
+            <input id="search-input" type="text" id="Search Input">
+            <img id="mic-icon" src="/home/yhryu1030/Pictures/mic.png" alt="Mic Icon">
+        </div>
+    </form>
+    <div class="buttons">
+        <a href="#">
+            <button class="btn">Google Search</button>
+        </a>
+        <a href="#">
+            <button class="btn">I'm Feeling Lucky</button>
+        </a>
+    </div>
+    <footer>
+        <ul class="botbar">
+            <li><a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+            <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+            <div class="push">
+                <li><a href="https://policies.google.com/privacy?fg=1">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?fg=1">Terms</a></li>
+                <li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+            </div>
+        </ul>
+    </footer>
+    
+</body>
